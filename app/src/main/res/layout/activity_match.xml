@@ -50,6 +50,7 @@
         android:layout_height="wrap_content"
         android:text="Add Home Score"
         android:layout_marginBottom="40dp"
+        android:onClick="addHomeScore"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -59,7 +60,7 @@
         android:id="@+id/txt_away"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Away Team"
         android:layout_marginBottom="20dp"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -94,7 +95,8 @@
         android:text="Add Away Score"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        android:onClick="addAwayScore"/>
 
     <Button
         android:id="@+id/btn_result"
@@ -104,7 +106,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="SubmitScore"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
